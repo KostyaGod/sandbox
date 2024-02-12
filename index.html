@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandbox</title>
+    <link rel="shortcut icon" href="img/sandbox.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="options_container">
+            <div class="header">
+                <!-- <img src="img/back.png" alt="back arrow" class="hide_btn"> -->
+                <h1 class="header_text">Sandbox</h1>
+            </div>
+
+            <table class="options">
+                <tr>
+                    <th colspan="2">
+                        <h2>Color Picker</h2>
+                    </th>
+                </tr>
+                <tr>
+                    <td><input type="color" id="box_bgcolor" class="box_colors" value="#e66465" /></td>
+                    <td>
+                        <p class="box_text">Background</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="color" id="box_bdrcolor" class="box_colors" value="#f6b73c" /></td>
+                    <td>
+                        <p class="box_text">Border</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <h2>Box Setting</h2>
+                    </th>
+                </tr>
+                <tr>
+                    <td><input type="number" id="box_width" class="box_values" min="0" max="" value="90"
+                            placeholder="0"></td>
+                    <td>
+                        <p class="box_text">Width</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="box_height" class="box_values" min="0" value="90" placeholder="0"></td>
+                    <td>
+                        <p class="box_text">Height</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="box_bdr_width" class="box_values" min="0" value="10" placeholder="0">
+                    </td>
+                    <td>
+                        <p class="box_text">Border Width</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="box_mass" class="box_values" min="0" value="10" placeholder="0"></td>
+                    <td>
+                        <p class="box_text">Mass</p>
+                    </td>
+                </tr>
+
+            </table>
+
+            <div class="creation_container">
+                <button class="create_btn" id="create_btn">Create Box</button>
+            </div>
+
+        </div>
+        <div class="game_container">
+            <!-- <img src="img/settings.png" alt="setting" class="setting_btn"> -->
+            <div class="game_display" id="game_display">
+                <canvas width="1059px" height="687px"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
